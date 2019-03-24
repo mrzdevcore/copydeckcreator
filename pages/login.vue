@@ -39,23 +39,23 @@ import {
   Component,
   Vue
 } from "nuxt-property-decorator";
-import { Person } from '~/types';
 
 @Component({})
 export default class extends Vue {
-    source: string = '';
-    username: string = '';
-    password: string = ''
+  source: string = '';
+  username: string = '';
+  password: string = ''
 
-    login(): void {
-        if (this.username && this.password) {
-            // this.$auth.loginWith('local', {
-            //     data: {
-            //         username: this.username,
-            //         password: this.password
-            //     }
-            // })
+  login(): void {
+    if (this.username && this.password) {
+      this.$auth.loginWith('local', {
+        data: {
+          username: this.username,
+          password: this.password
         }
+      }).then(() => this.$toast.success('Logged In!'))
+      .catch(() => this.$toast.success('error'))
     }
+  }
 }
 </script>

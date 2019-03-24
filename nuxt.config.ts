@@ -35,7 +35,8 @@ export default {
     '@nuxtjs/auth',
     '@nuxtjs/vuetify',
     '@nuxtjs/toast',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/toast'
   ],
   axios: {},
   router: {
