@@ -1,0 +1,26 @@
+{
+    "rules": {
+        "no-duplicate-imports": true,
+        "no-unused-variable": true,
+        "no-any": true,
+        "no-console": {
+            "severity": "warn",
+            "options": [
+                "debug",
+                "time",
+                "timeEnd",
+                "trace"
+            ]
+        },
+        "no-var-keyword": true,
+        "no-empty": true,
+        "no-irregular-whitespace": true,
+        "no-trailing-whitespace": true,
+        "indent": true,
+        "class-name": true,
+        "curly": false,
+        "prefer-template":true,
+        "semicolon": false,
+        "quotemark": false
+    }
+}
